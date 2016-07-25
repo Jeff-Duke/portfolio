@@ -1,11 +1,14 @@
+/*color pallette
+warm orange - #FFBB74
+cool blue - #74749C
+*/
+
+
 body {
     font-family: 'Merriweather Sans', sans-serif;
-    background: #6D6D3E;
     margin: auto;
-    margin-top: 15px;
     margin-bottom: 15px;
-    min-width: 600px;
-    width: 960px;
+    min-width: 800px;
 }
 
 a {
@@ -13,45 +16,46 @@ a {
     color: inherit;
 }
 
-section {
-    background: dimgray;
-    color: white;
-    padding: 8px;
-}
-
 h1 {
     font-size: 2em;
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
 h2 {
     font-size: 1.8em;
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
 h3 {
     font-size: 1.3em;
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
 h4 {
     font-size: 1em;
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
 h5 {
     font-size: 0.8em;
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
 h6 {
     font-size: 0.7em;
-    color: #D0D67E;
+    color: #FFBB74;
+}
+
+b {
+    font-style: bold;
+}
+
+small {
+    font-size: 0.8em;
 }
 
 header {
     background: #4E5961;
-    border: 2px solid #D0D67E;
     color: white;
     height: 50px;
 }
@@ -60,13 +64,24 @@ header h1 {
     text-indent: -9999px;
 }
 
-nav {
+aside {
+    width: 150px;
     display: inline-block;
-    text-align: center;
+    background: #74749C;
+    color: black;
+    text-transform: uppercase;
+    height: 100%;
+    float: left;
+
+}
+
+#main-content {
+    display: inline-block;
+    height: 375px;
+    width: 100%;
 }
 
 nav li {
-    display: inline-block;
     padding: 15px;
 }
 
@@ -75,13 +90,13 @@ nav li:hover {
 }
 
 #hero {
-    background: url('../images/landscape-mountains.jpeg') no-repeat;
+    background: url('../images/heroImage.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    border-left: 2px solid #D0D67E;
-    border-right: 2px solid #D0D67E;
-    border-bottom: 2px solid #D0D67E;
     color: black;
-    height: 400px;
+    height: 250px;
+    width: 100%;
+    background-position: top;
 
 }
 
@@ -92,21 +107,29 @@ nav li:hover {
 #hero h3 {
     display: block;
     color: black;
-    position: relative;
-    bottom: 30px;
+    float: right;
+    width: 330px;
+    height: 200px;
+    text-transform: uppercase;
 }
 
 #about {
-    border: 2px solid #D0D67E;
     height: 250px;
     margin-top: 10px;
+    display: block;
 }
 
+.headshot {
+    border-radius: 50%;
+    height: 150px;
+    margin: 15px;
+    display: inline;
+}
 .resume {
-    border: 1px solid #D0D67E;
+    border: 1px solid   black;
     border-radius: 2px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 25px;
     height: 20px;
     width: 150px;
     padding: 15px;
@@ -119,17 +142,15 @@ nav li:hover {
 }
 
 .projects {
-    border: 2px solid #D0D67E;
     margin-top: 10px;
 }
 
 .card{
-    border: 1px solid #D0D67E;
+    border: 1px solid #FFBB74;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 300px;
+    margin: 10px;
+    width: 450px;
 }
 .card img {
     margin: auto;
@@ -156,7 +177,6 @@ p.project-description {
 
 }
 #testimonials {
-    border: 2px solid #D0D67E;
     margin-top: 10px;
 }
 
@@ -169,39 +189,23 @@ article.testimonial {
 }
 
 footer {
-    border: 2px solid #D0D67E;
     background: #4E5961;
-    margin-top: 10px;
+    height: 50px;
+    width: 100%;
 }
 footer h2{
     text-indent: -9999px;
 }
 
-.headshot {
-    border-radius: 50%;
-    height: 150px;
-    margin: 15px;
-}
-
-.footer-center {
-    display: inline-block;
-    width: 40%;
-    margin: auto;
-}
-
-.footer-side {
-    display: inline-block;
-    width: 25%;
-}
 
 .social {
-    color: #D0D67E;
+    color: #FFBB74;
 }
 
-.social li a {
-    vertical-align: middle;
-    padding-left: 10px;
-    font-size: 0.8em;
+.social li {
+    display: inline-block;
+    float: right;
+    padding: 2px;
 }
 
 .social a:hover {
@@ -209,24 +213,5 @@ footer h2{
 }
 
 .social li img {
-    height: 40px;
-}
-
-.footer-nav {
-    font-size: 1.5em;
-    color: #D0D67E;
-    position: relative;
-    bottom: 10px;
-    left: 50px;
-    margin: auto;
-}
-.footer-nav li {
-    margin-bottom: 8px;
-}
-
-.footer-nav li:hover {
-    color: white;
-}
-article#contact.footer-center {
-    margin-bottom: 25px;
+    height: 30px;
 }
