@@ -64,14 +64,15 @@ header h1 {
     text-indent: -9999px;
 }
 
-aside {
+aside{
     width: 150px;
-    display: inline-block;
+    display: table-row;
     background: #74749C;
     color: black;
     text-transform: uppercase;
-    height: 100%;
+    min-height: 100%;
     float: left;
+    position: relative;
 
 }
 
@@ -96,7 +97,7 @@ nav li:hover {
     color: black;
     height: 250px;
     width: 100%;
-    background-position: top;
+    background-position: top-right;
 
 }
 
@@ -143,21 +144,34 @@ nav li:hover {
 
 .projects {
     margin-top: 10px;
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content-container {
+    height: 100%;
 }
 
 .card{
-    border: 1px solid #FFBB74;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
-    width: 450px;
+    width: 300px;
+    box-shadow: 5px;
 }
 .card img {
     margin: auto;
 }
 
 .card:hover {
-    background: grey;
+    transform: scale(1.05);
+}
+
+.card p {
+    margin-top: 10px;
+    line-height: 1.2em;
 }
 
 .container {
